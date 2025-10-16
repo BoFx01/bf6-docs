@@ -1,5 +1,5 @@
 site_name: Battlefield 6 Developer Documentation
 theme:
-  name: readthedocs
+  name: material
 repo_url: https://github.com/BoFx01/bf6-docs/
 edit_uri: edit/main/docs/
