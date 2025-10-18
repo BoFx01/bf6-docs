@@ -299,7 +299,7 @@
 - [ ] [SetScoreboardSorting](./SetScoreboardSorting.md)
 - [ ] [SetScoreboardType](./SetScoreboardType.md)
 
-### UI Widgets - [ ] Creation
+### UI Widgets - Creation
 - [ ] [AddUIButton](./AddUIButton.md)
 - [ ] [AddUIContainer](./AddUIContainer.md)
 - [ ] [AddUIGadgetImage](./AddUIGadgetImage.md)
@@ -309,7 +309,7 @@
 - [ ] [DeleteAllUIWidgets](./DeleteAllUIWidgets.md)
 - [ ] [DeleteUIWidget](./DeleteUIWidget.md)
 
-### UI Widgets - [ ] Button Properties
+### UI Widgets - Button Properties
 - [ ] [EnableUIButtonEvent](./EnableUIButtonEvent.md)
 - [ ] [SetUIButtonAlphaBase](./SetUIButtonAlphaBase.md)
 - [ ] [SetUIButtonAlphaDisabled](./SetUIButtonAlphaDisabled.md)
@@ -334,7 +334,7 @@
 - [ ] [GetUIButtonColorPressed](./GetUIButtonColorPressed.md)
 - [ ] [GetUIButtonEnabled](./GetUIButtonEnabled.md)
 
-### UI Widgets - [ ] Image Properties
+### UI Widgets - Image Properties
 - [ ] [SetUIImageAlpha](./SetUIImageAlpha.md)
 - [ ] [SetUIImageColor](./SetUIImageColor.md)
 - [ ] [SetUIImageType](./SetUIImageType.md)
@@ -342,7 +342,7 @@
 - [ ] [GetUIImageColor](./GetUIImageColor.md)
 - [ ] [GetUIImageType](./GetUIImageType.md)
 
-### UI Widgets - [ ] Text Properties
+### UI Widgets - Text Properties
 - [ ] [SetUITextAlpha](./SetUITextAlpha.md)
 - [ ] [SetUITextAnchor](./SetUITextAnchor.md)
 - [ ] [SetUITextColor](./SetUITextColor.md)
@@ -353,7 +353,7 @@
 - [ ] [GetUITextColor](./GetUITextColor.md)
 - [ ] [GetUITextSize](./GetUITextSize.md)
 
-### UI Widgets - [ ] General Properties
+### UI Widgets - General Properties
 - [ ] [SetUIWidgetAnchor](./SetUIWidgetAnchor.md)
 - [ ] [SetUIWidgetBgAlpha](./SetUIWidgetBgAlpha.md)
 - [ ] [SetUIWidgetBgColor](./SetUIWidgetBgColor.md)
@@ -377,7 +377,7 @@
 - [ ] [GetUIWidgetSize](./GetUIWidgetSize.md)
 - [ ] [GetUIWidgetVisible](./GetUIWidgetVisible.md)
 
-### UI Widgets - [ ] Queries
+### UI Widgets - Queries
 - [ ] [FindUIWidgetWithName](./FindUIWidgetWithName.md)
 - [ ] [GetUIRoot](./GetUIRoot.md)
 - [ ] [HasUIWidgetWithName](./HasUIWidgetWithName.md)
