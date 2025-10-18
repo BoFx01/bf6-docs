@@ -1,5 +1,14 @@
 site_name: Battlefield 6 Developer Documentation
 theme:
   name: material
+  features:
+    - navigation.path
+    - navigation.indexes
 repo_url: https://github.com/BoFx01/bf6-docs/
 edit_uri: edit/main/docs/
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
