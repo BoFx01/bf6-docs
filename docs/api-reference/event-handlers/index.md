@@ -26,8 +26,8 @@
 
   - [x] [OnPlayerEnterAreaTrigger](./OnPlayerEnterAreaTrigger.md)
   - [x] [OnPlayerExitAreaTrigger](./OnPlayerExitAreaTrigger.md)
-  - [ ] [OnPlayerEnterCapturePoint](./OnPlayerEnterCapturePoint.md)
-  - [ ] [OnPlayerExitCapturePoint](./OnPlayerExitCapturePoint.md)
+  - [x] [OnPlayerEnterCapturePoint](./OnPlayerEnterCapturePoint.md)
+  - [x] [OnPlayerExitCapturePoint](./OnPlayerExitCapturePoint.md)
   - [ ] [OnPlayerInteract](./OnPlayerInteract.md)
 
 **Combat**
