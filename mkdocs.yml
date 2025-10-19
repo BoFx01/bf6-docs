@@ -4,6 +4,7 @@ theme:
   features:
     - navigation.path
     - navigation.indexes
+    - navigation.sections
 repo_url: https://github.com/BoFx01/bf6-docs/
 edit_uri: edit/main/docs/
 markdown_extensions:
