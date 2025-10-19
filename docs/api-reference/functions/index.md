@@ -183,7 +183,7 @@
 ## Game Mode Functions
 
 ### Game Mode Control
-- [ ] [EndGameMode](./EndGameMode.md)
+- [x] [EndGameMode](./EndGameMode.md)
 - [ ] [PauseGameModeTime](./PauseGameModeTime.md)
 - [ ] [ResetGameModeTime](./ResetGameModeTime.md)
 - [ ] [SetFriendlyFire](./SetFriendlyFire.md)
@@ -236,8 +236,8 @@
 ## World Objects
 
 ### Area Triggers
-- [ ] [EnableAreaTrigger](./EnableAreaTrigger.md)
-- [ ] [GetAreaTrigger](./GetAreaTrigger.md)
+- [x] [EnableAreaTrigger](./EnableAreaTrigger.md)
+- [x] [GetAreaTrigger](./GetAreaTrigger.md)
 
 ### Interact Points
 - [ ] [EnableInteractPoint](./EnableInteractPoint.md)
@@ -256,10 +256,10 @@
 - [ ] [SetObjectTransformOverTime](./SetObjectTransformOverTime.md)
 - [ ] [StopActiveMovementForObject](./StopActiveMovementForObject.md)
 - [ ] [UnspawnObject](./UnspawnObject.md)
-- [ ] [SpawnObject](./SpawnObject.md)
+- [x] [SpawnObject](./SpawnObject.md)
 
 ### Object Queries
-- [ ] [GetObjId](./GetObjId.md)
+- [x] [GetObjId](./GetObjId.md)
 - [ ] [GetObjectPosition](./GetObjectPosition.md)
 - [ ] [GetObjectRotation](./GetObjectRotation.md)
 - [ ] [GetObjectTransform](./GetObjectTransform.md)
@@ -272,7 +272,7 @@
 
 ### World Icons
 - [ ] [AddUIIcon](./AddUIIcon.md)
-- [ ] [EnableWorldIconImage](./EnableWorldIconImage.md)
+- [x] [EnableWorldIconImage](./EnableWorldIconImage.md)
 - [ ] [EnableWorldIconText](./EnableWorldIconText.md)
 - [ ] [RemoveUIIcon](./RemoveUIIcon.md)
 - [ ] [SetWorldIconColor](./SetWorldIconColor.md)

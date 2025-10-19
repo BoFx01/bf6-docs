@@ -6,61 +6,11 @@
 
 ## Functions
 
-### Ongoing/Continuous Events
-
-**Global & Environmental**
-
-  - [x] [OngoingGlobal](./OngoingGlobal.md)
-  - [ ] [OngoingAreaTrigger](./OngoingAreaTrigger.md)
-  - [ ] [OngoingScreenEffect](./OngoingScreenEffect.md)
-  - [ ] [OngoingWorldIcon](./OngoingWorldIcon.md)
-
 ### Game Mode Events
 
 - [x] [OnGameModeStarted](./OnGameModeStarted.md)
-- [ ] [OnGameModeEnding](./OnGameModeEnding.md)
+- [x] [OnGameModeEnding](./OnGameModeEnding.md)
 - [ ] [OnTimeLimitReached](./OnTimeLimitReached.md)
-
-**Objective-Related**
-
-  - [ ] [OngoingCapturePoint](./OngoingCapturePoint.md)
-  - [ ] [OngoingMCOM](./OngoingMCOM.md)
-  - [ ] [OngoingSector](./OngoingSector.md)
-  - [ ] [OngoingInteractPoint](./OngoingInteractPoint.md)
-
-**Spawning Systems**
-
-  - [ ] [OngoingSpawner](./OngoingSpawner.md)
-  - [ ] [OngoingSpawnPoint](./OngoingSpawnPoint.md)
-  - [ ] [OngoingEmplacementSpawner](./OngoingEmplacementSpawner.md)
-  - [ ] [OngoingVehicleSpawner](./OngoingVehicleSpawner.md)
-
-**Entities**
-
-  - [ ] [OngoingPlayer](./OngoingPlayer.md)
-  - [ ] [OngoingTeam](./OngoingTeam.md)
-  - [ ] [OngoingVehicle](./OngoingVehicle.md)
-  - [ ] [OngoingHQ](./OngoingHQ.md)
-  - [ ] [OngoingWaypointPath](./OngoingWaypointPath.md)
-
-### AI Events
-
-**Movement**
-
-  - [ ] [OnAIMoveToFailed](./OnAIMoveToFailed.md)
-  - [ ] [OnAIMoveToRunning](./OnAIMoveToRunning.md)
-  - [ ] [OnAIMoveToSucceeded](./OnAIMoveToSucceeded.md)
-
-**Parachuting**
-
-  - [ ] [OnAIParachuteRunning](./OnAIParachuteRunning.md)
-  - [ ] [OnAIParachuteSucceeded](./OnAIParachuteSucceeded.md)
-
-**Waypoint Idle**
-
-  - [ ] [OnAIWaypointIdleFailed](./OnAIWaypointIdleFailed.md)
-  - [ ] [OnAIWaypointIdleRunning](./OnAIWaypointIdleRunning.md)
-  - [ ] [OnAIWaypointIdleSucceeded](./OnAIWaypointIdleSucceeded.md)
 
 ### Player Events
 
@@ -117,7 +67,61 @@
   - [ ] [OnMCOMDefused](./OnMCOMDefused.md)
   - [ ] [OnMCOMDestroyed](./OnMCOMDestroyed.md)
 
+### AI Events
+
+**Movement**
+
+  - [ ] [OnAIMoveToFailed](./OnAIMoveToFailed.md)
+  - [ ] [OnAIMoveToRunning](./OnAIMoveToRunning.md)
+  - [ ] [OnAIMoveToSucceeded](./OnAIMoveToSucceeded.md)
+
+**Parachuting**
+
+  - [ ] [OnAIParachuteRunning](./OnAIParachuteRunning.md)
+  - [ ] [OnAIParachuteSucceeded](./OnAIParachuteSucceeded.md)
+
+**Waypoint Idle**
+
+  - [ ] [OnAIWaypointIdleFailed](./OnAIWaypointIdleFailed.md)
+  - [ ] [OnAIWaypointIdleRunning](./OnAIWaypointIdleRunning.md)
+  - [ ] [OnAIWaypointIdleSucceeded](./OnAIWaypointIdleSucceeded.md)
+
 ### Vehicle Events
 
 - [ ] [OnVehicleDestroyed](./OnVehicleDestroyed.md)
 - [ ] [OnVehicleSpawned](./OnVehicleSpawned.md)
+
+### Ongoing/Continuous Events
+
+!!! warning
+
+    These are advanced event handlers and are not recommended for beginners.
+
+**Global & Environmental**
+
+  - [x] [OngoingGlobal](./OngoingGlobal.md)
+  - [x] [OngoingAreaTrigger](./OngoingAreaTrigger.md)
+  - [ ] [OngoingScreenEffect](./OngoingScreenEffect.md)
+  - [ ] [OngoingWorldIcon](./OngoingWorldIcon.md)
+
+**Objective-Related**
+
+  - [ ] [OngoingCapturePoint](./OngoingCapturePoint.md)
+  - [ ] [OngoingMCOM](./OngoingMCOM.md)
+  - [ ] [OngoingSector](./OngoingSector.md)
+  - [ ] [OngoingInteractPoint](./OngoingInteractPoint.md)
+
+**Spawning Systems**
+
+  - [ ] [OngoingSpawner](./OngoingSpawner.md)
+  - [ ] [OngoingSpawnPoint](./OngoingSpawnPoint.md)
+  - [ ] [OngoingEmplacementSpawner](./OngoingEmplacementSpawner.md)
+  - [ ] [OngoingVehicleSpawner](./OngoingVehicleSpawner.md)
+
+**Entities**
+
+  - [ ] [OngoingPlayer](./OngoingPlayer.md)
+  - [ ] [OngoingTeam](./OngoingTeam.md)
+  - [ ] [OngoingVehicle](./OngoingVehicle.md)
+  - [ ] [OngoingHQ](./OngoingHQ.md)
+  - [ ] [OngoingWaypointPath](./OngoingWaypointPath.md)
