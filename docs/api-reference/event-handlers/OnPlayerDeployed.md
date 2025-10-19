@@ -33,3 +33,7 @@ export function OnPlayerDeployed(eventPlayer: mod.Player): void;
     ```
 
 ![Example of in-game message when player deploys](../../img/OnPlayerDeployed_example.gif)
+
+## See Also
+
+- [`OnPlayerUndeploy`](./OnPlayerUndeploy.md)

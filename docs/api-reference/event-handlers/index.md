@@ -16,8 +16,8 @@
 
 **Deployment**
 
-  - [ ] [OnPlayerDeployed](./OnPlayerDeployed.md)
-  - [ ] [OnPlayerUndeploy](./OnPlayerUndeploy.md)
+  - [x] [OnPlayerDeployed](./OnPlayerDeployed.md)
+  - [x] [OnPlayerUndeploy](./OnPlayerUndeploy.md)
   - [ ] [OnPlayerJoinGame](./OnPlayerJoinGame.md)
   - [ ] [OnPlayerLeaveGame](./OnPlayerLeaveGame.md)
   - [ ] [OnPlayerSwitchTeam](./OnPlayerSwitchTeam.md)
