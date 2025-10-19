@@ -32,11 +32,11 @@
 
 **Combat**
 
-  - [ ] [OnPlayerDamaged](./OnPlayerDamaged.md)
-  - [ ] [OnPlayerDied](./OnPlayerDied.md)
+  - [x] [OnPlayerDamaged](./OnPlayerDamaged.md)
+  - [x] [OnPlayerDied](./OnPlayerDied.md)
   - [ ] [OnPlayerEarnedKill](./OnPlayerEarnedKill.md)
   - [ ] [OnPlayerEarnedKillAssist](./OnPlayerEarnedKillAssist.md)
-  - [ ] [OnMandown](./OnMandown.md)
+  - [x] [OnMandown](./OnMandown.md)
   - [ ] [OnRevived](./OnRevived.md)
 
 **Vehicle Interaction**
