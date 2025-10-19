@@ -18,8 +18,8 @@
 
   - [x] [OnPlayerDeployed](./OnPlayerDeployed.md)
   - [x] [OnPlayerUndeploy](./OnPlayerUndeploy.md)
-  - [ ] [OnPlayerJoinGame](./OnPlayerJoinGame.md)
-  - [ ] [OnPlayerLeaveGame](./OnPlayerLeaveGame.md)
+  - [x] [OnPlayerJoinGame](./OnPlayerJoinGame.md)
+  - [x] [OnPlayerLeaveGame](./OnPlayerLeaveGame.md)
   - [ ] [OnPlayerSwitchTeam](./OnPlayerSwitchTeam.md)
 
 **Area/Object Interaction**
