@@ -10,9 +10,9 @@ export function OngoingTeam(eventTeam: mod.Team): void;
 
 ## Parameters
 
-| Parameter | Type     | Description                                       |
-| --------- | -------- | ------------------------------------------------- |
-| eventTeam | mod.Team | The team for which the ongoing logic will execute |
+| Parameter   | Type       | Description                                       |
+| ----------- | ---------- | ------------------------------------------------- |
+| `eventTeam` | `mod.Team` | The team for which the ongoing logic will execute |
 
 ## See Also
 
