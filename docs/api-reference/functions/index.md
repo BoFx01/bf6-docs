@@ -140,7 +140,7 @@
 - [ ] [SetPlayerMaxHealth](./SetPlayerMaxHealth.md)
 
 ### Player Movement
-- [ ] [Teleport](./Teleport.md)
+- [x] [Teleport](./Teleport.md)
 - [ ] [SetPlayerMovementSpeedMultiplier](./SetPlayerMovementSpeedMultiplier.md)
 
 ### Player Input
