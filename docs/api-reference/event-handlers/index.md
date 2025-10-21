@@ -41,10 +41,10 @@
 
 **Vehicle Interaction**
 
-  - [ ] [OnPlayerEnterVehicle](./OnPlayerEnterVehicle.md)
-  - [ ] [OnPlayerEnterVehicleSeat](./OnPlayerEnterVehicleSeat.md)
-  - [ ] [OnPlayerExitVehicle](./OnPlayerExitVehicle.md)
-  - [ ] [OnPlayerExitVehicleSeat](./OnPlayerExitVehicleSeat.md)
+  - [x] [OnPlayerEnterVehicle](./OnPlayerEnterVehicle.md)
+  - [x] [OnPlayerEnterVehicleSeat](./OnPlayerEnterVehicleSeat.md)
+  - [x] [OnPlayerExitVehicle](./OnPlayerExitVehicle.md)
+  - [x] [OnPlayerExitVehicleSeat](./OnPlayerExitVehicleSeat.md)
 
 **Other Player Events**
 
