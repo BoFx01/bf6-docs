@@ -173,9 +173,9 @@
 - [ ] [EventDeathTypeCompare](./EventDeathTypeCompare.md)
 
 ### Player Team & Squad
-- [ ] [SetTeam](./SetTeam.md)
+- [x] [SetTeam](./SetTeam.md)
 - [ ] [GetSquad](./GetSquad.md)
-- [ ] [GetTeam](./GetTeam.md)
+- [x] [GetTeam](./GetTeam.md)
 
 ### Player Spotting
 - [ ] [SpotTarget](./SpotTarget.md)
