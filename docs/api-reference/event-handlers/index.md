@@ -121,7 +121,7 @@
 **Entities**
 
   - [ ] [OngoingPlayer](./OngoingPlayer.md)
-  - [ ] [OngoingTeam](./OngoingTeam.md)
+  - [x] [OngoingTeam](./OngoingTeam.md)
   - [ ] [OngoingVehicle](./OngoingVehicle.md)
   - [ ] [OngoingHQ](./OngoingHQ.md)
   - [ ] [OngoingWaypointPath](./OngoingWaypointPath.md)
