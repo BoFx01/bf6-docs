@@ -1,0 +1,2748 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://bofx01.github.io/bf6-docs/api/mod/functions/">
+      
+      
+        <link rel="prev" href="../events/">
+      
+      
+        <link rel="next" href="../types/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
+    
+    
+      
+        <title>Functions - Battlefield 6 Developer Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.bcfcd587.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="orange" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#functions" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Battlefield 6 Developer Documentation" class="md-header__button md-logo" aria-label="Battlefield 6 Developer Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Battlefield 6 Developer Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Functions
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="orange" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9h-1.9M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69m-9.15 3.96h2.3L12 9l-1.15 3.65Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="orange" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="orange" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/BoFx01/bf6-docs/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Battlefield 6 Developer Documentation" class="md-nav__button md-logo" aria-label="Battlefield 6 Developer Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Battlefield 6 Developer Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/BoFx01/bf6-docs/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Welcome
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    API Reference
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            API Reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    mod
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            mod
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../events/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Events
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Functions
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Functions
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#core-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Core Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#general" class="md-nav__link">
+    <span class="md-ellipsis">
+      General
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variables-data-manipulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variables &amp; Data Manipulation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ai-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AI Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ai-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Behavior
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-spawning" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Spawning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-combat" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Combat
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-movement" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Movement
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#audio-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Audio Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Audio Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sound-effects" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sound Effects
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#voice-over" class="md-nav__link">
+    <span class="md-ellipsis">
+      Voice Over
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visual-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visual Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Visual Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#camera" class="md-nav__link">
+    <span class="md-ellipsis">
+      Camera
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#screen-effects" class="md-nav__link">
+    <span class="md-ellipsis">
+      Screen Effects
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visual-effects-vfx" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visual Effects (VFX)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spawner-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Spawner Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Spawner Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#emplacement-spawners" class="md-nav__link">
+    <span class="md-ellipsis">
+      Emplacement Spawners
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vehicle-spawners" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vehicle Spawners
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#general-spawners" class="md-nav__link">
+    <span class="md-ellipsis">
+      General Spawners
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#player-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Player Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Player Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#player-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Player Deployment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#player-spawning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Player Spawning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#player-health-damage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Player Health &amp; Damage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#player-movement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Player Movement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#player-input" class="md-nav__link">
+    <span class="md-ellipsis">
+      Player Input
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#player-inventory-equipment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Player Inventory &amp; Equipment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#player-queries" class="md-nav__link">
+    <span class="md-ellipsis">
+      Player Queries
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#player-team-squad" class="md-nav__link">
+    <span class="md-ellipsis">
+      Player Team &amp; Squad
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#player-spotting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Player Spotting
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#game-mode-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Game Mode Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Game Mode Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#game-mode-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      Game Mode Control
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#game-mode-scoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      Game Mode Scoring
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#faction-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      Faction &amp; Map
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#objective-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objective Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Objective Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#capture-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      Capture Points
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hq-headquarters" class="md-nav__link">
+    <span class="md-ellipsis">
+      HQ (Headquarters)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mcom" class="md-nav__link">
+    <span class="md-ellipsis">
+      MCOM
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sector" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sector
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#general-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      General Objectives
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#world-objects" class="md-nav__link">
+    <span class="md-ellipsis">
+      World Objects
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="World Objects">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#area-triggers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Area Triggers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interact-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interact Points
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spatial-objects" class="md-nav__link">
+    <span class="md-ellipsis">
+      Spatial Objects
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#object-manipulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Object Manipulation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#object-queries" class="md-nav__link">
+    <span class="md-ellipsis">
+      Object Queries
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#raycasting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raycasting
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ui-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      UI Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="UI Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#world-icons" class="md-nav__link">
+    <span class="md-ellipsis">
+      World Icons
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notifications-messages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notifications &amp; Messages
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scoreboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scoreboard
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ui-widgets-creation" class="md-nav__link">
+    <span class="md-ellipsis">
+      UI Widgets - Creation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ui-widgets-button-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      UI Widgets - Button Properties
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ui-widgets-image-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      UI Widgets - Image Properties
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ui-widgets-text-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      UI Widgets - Text Properties
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ui-widgets-general-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      UI Widgets - General Properties
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ui-widgets-queries" class="md-nav__link">
+    <span class="md-ellipsis">
+      UI Widgets - Queries
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ui-input" class="md-nav__link">
+    <span class="md-ellipsis">
+      UI Input
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vehicle-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vehicle Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Vehicle Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vehicle-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vehicle Control
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vehicle-queries" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vehicle Queries
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#waypoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      Waypoints
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#array-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Array Functions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logic-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logic &amp; Comparison
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#string-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      String Functions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#math-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Math Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Math Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-math" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Math
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trigonometry" class="md-nav__link">
+    <span class="md-ellipsis">
+      Trigonometry
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#random" class="md-nav__link">
+    <span class="md-ellipsis">
+      Random
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vector-transform-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vector &amp; Transform Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Vector & Transform Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vector-creation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vector Creation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vector-math" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vector Math
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vector-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vector Components
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#direction-vectors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Direction Vectors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coordinate-transforms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Coordinate Transforms
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transform" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transform
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../types/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Types
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../modlib/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    modlib
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            modlib
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#core-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Core Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#general" class="md-nav__link">
+    <span class="md-ellipsis">
+      General
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variables-data-manipulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variables &amp; Data Manipulation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ai-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AI Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ai-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Behavior
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-spawning" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Spawning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-combat" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Combat
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-movement" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Movement
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#audio-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Audio Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Audio Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sound-effects" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sound Effects
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#voice-over" class="md-nav__link">
+    <span class="md-ellipsis">
+      Voice Over
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visual-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visual Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Visual Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#camera" class="md-nav__link">
+    <span class="md-ellipsis">
+      Camera
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#screen-effects" class="md-nav__link">
+    <span class="md-ellipsis">
+      Screen Effects
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visual-effects-vfx" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visual Effects (VFX)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spawner-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Spawner Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Spawner Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#emplacement-spawners" class="md-nav__link">
+    <span class="md-ellipsis">
+      Emplacement Spawners
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vehicle-spawners" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vehicle Spawners
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#general-spawners" class="md-nav__link">
+    <span class="md-ellipsis">
+      General Spawners
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#player-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Player Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Player Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#player-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Player Deployment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#player-spawning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Player Spawning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#player-health-damage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Player Health &amp; Damage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#player-movement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Player Movement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#player-input" class="md-nav__link">
+    <span class="md-ellipsis">
+      Player Input
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#player-inventory-equipment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Player Inventory &amp; Equipment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#player-queries" class="md-nav__link">
+    <span class="md-ellipsis">
+      Player Queries
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#player-team-squad" class="md-nav__link">
+    <span class="md-ellipsis">
+      Player Team &amp; Squad
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#player-spotting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Player Spotting
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#game-mode-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Game Mode Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Game Mode Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#game-mode-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      Game Mode Control
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#game-mode-scoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      Game Mode Scoring
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#faction-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      Faction &amp; Map
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#objective-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objective Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Objective Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#capture-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      Capture Points
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hq-headquarters" class="md-nav__link">
+    <span class="md-ellipsis">
+      HQ (Headquarters)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mcom" class="md-nav__link">
+    <span class="md-ellipsis">
+      MCOM
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sector" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sector
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#general-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      General Objectives
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#world-objects" class="md-nav__link">
+    <span class="md-ellipsis">
+      World Objects
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="World Objects">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#area-triggers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Area Triggers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interact-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interact Points
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spatial-objects" class="md-nav__link">
+    <span class="md-ellipsis">
+      Spatial Objects
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#object-manipulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Object Manipulation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#object-queries" class="md-nav__link">
+    <span class="md-ellipsis">
+      Object Queries
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#raycasting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raycasting
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ui-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      UI Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="UI Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#world-icons" class="md-nav__link">
+    <span class="md-ellipsis">
+      World Icons
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notifications-messages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notifications &amp; Messages
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scoreboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scoreboard
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ui-widgets-creation" class="md-nav__link">
+    <span class="md-ellipsis">
+      UI Widgets - Creation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ui-widgets-button-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      UI Widgets - Button Properties
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ui-widgets-image-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      UI Widgets - Image Properties
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ui-widgets-text-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      UI Widgets - Text Properties
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ui-widgets-general-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      UI Widgets - General Properties
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ui-widgets-queries" class="md-nav__link">
+    <span class="md-ellipsis">
+      UI Widgets - Queries
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ui-input" class="md-nav__link">
+    <span class="md-ellipsis">
+      UI Input
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vehicle-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vehicle Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Vehicle Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vehicle-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vehicle Control
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vehicle-queries" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vehicle Queries
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#waypoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      Waypoints
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#array-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Array Functions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logic-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logic &amp; Comparison
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#string-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      String Functions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#math-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Math Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Math Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-math" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Math
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trigonometry" class="md-nav__link">
+    <span class="md-ellipsis">
+      Trigonometry
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#random" class="md-nav__link">
+    <span class="md-ellipsis">
+      Random
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vector-transform-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vector &amp; Transform Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Vector & Transform Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vector-creation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vector Creation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vector-math" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vector Math
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vector-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vector Components
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#direction-vectors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Direction Vectors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coordinate-transforms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Coordinate Transforms
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transform" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transform
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="functions">Functions</h1>
+<div class="admonition warning">
+<p class="admonition-title">Work in Progress</p>
+<p>This documentation is a work in progress. Contributions are encouraged. Only pages with a checkmark are complete.</p>
+</div>
+<h2 id="core-functions">Core Functions</h2>
+<h3 id="general">General</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="Wait/">Wait</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetVariable.md">SetVariable</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetVariableAtIndex.md">SetVariableAtIndex</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetArgument.md">GetArgument</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetVariable.md">GetVariable</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GlobalVariable.md">GlobalVariable</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./ObjectVariable.md">ObjectVariable</a></li>
+</ul>
+<h3 id="variables-data-manipulation">Variables &amp; Data Manipulation</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./ChaseVariableAtRate.md">ChaseVariableAtRate</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./ChaseVariableOverTime.md">ChaseVariableOverTime</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./StopChasingVariable.md">StopChasingVariable</a></li>
+</ul>
+<h2 id="ai-functions">AI Functions</h2>
+<h3 id="ai-behavior">AI Behavior</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="AIBattlefieldBehavior/">AIBattlefieldBehavior</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./AIDefendPositionBehavior.md">AIDefendPositionBehavior</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./AIIdleBehavior.md">AIIdleBehavior</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./AILOSMoveToBehavior.md">AILOSMoveToBehavior</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./AIMoveToBehavior.md">AIMoveToBehavior</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./AIParachuteBehavior.md">AIParachuteBehavior</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./AIValidatedMoveToBehavior.md">AIValidatedMoveToBehavior</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./AIWaypointIdleBehavior.md">AIWaypointIdleBehavior</a></li>
+</ul>
+<h3 id="ai-spawning">AI Spawning</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./AISetUnspawnOnDead.md">AISetUnspawnOnDead</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetUnspawnDelayInSeconds.md">SetUnspawnDelayInSeconds</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="SpawnAIFromAISpawner/">SpawnAIFromAISpawner</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./UnspawnAllAIsFromAISpawner.md">UnspawnAllAIsFromAISpawner</a></li>
+</ul>
+<h3 id="ai-combat">AI Combat</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./AIEnableShooting.md">AIEnableShooting</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./AIEnableTargeting.md">AIEnableTargeting</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./AIForceFire.md">AIForceFire</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./AIGadgetSettings.md">AIGadgetSettings</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./AISetFocusPoint.md">AISetFocusPoint</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./AISetTarget.md">AISetTarget</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./AIStartUsingGadget.md">AIStartUsingGadget</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./AIStopUsingGadget.md">AIStopUsingGadget</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetAIToHumanDamageModifier.md">SetAIToHumanDamageModifier</a></li>
+</ul>
+<h3 id="ai-movement">AI Movement</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./AISetMoveSpeed.md">AISetMoveSpeed</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./AISetStance.md">AISetStance</a></li>
+</ul>
+<h2 id="audio-functions">Audio Functions</h2>
+<h3 id="sound-effects">Sound Effects</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./EnableSFX.md">EnableSFX</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./PlaySound.md">PlaySound</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetSFXVolume.md">SetSFXVolume</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./StopSound.md">StopSound</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetSFX.md">GetSFX</a></li>
+</ul>
+<h3 id="voice-over">Voice Over</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./PlayVO.md">PlayVO</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetVO.md">GetVO</a></li>
+</ul>
+<h2 id="visual-functions">Visual Functions</h2>
+<h3 id="camera">Camera</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetCameraTypeForAll.md">SetCameraTypeForAll</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetCameraTypeForPlayer.md">SetCameraTypeForPlayer</a></li>
+</ul>
+<h3 id="screen-effects">Screen Effects</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./EnableScreenEffect.md">EnableScreenEffect</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetScreenEffect.md">GetScreenEffect</a></li>
+</ul>
+<h3 id="visual-effects-vfx">Visual Effects (VFX)</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./EnableVFX.md">EnableVFX</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./MoveVFX.md">MoveVFX</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetVFXColor.md">SetVFXColor</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetVFXScale.md">SetVFXScale</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetVFXSpeed.md">SetVFXSpeed</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetVFX.md">GetVFX</a></li>
+</ul>
+<h2 id="spawner-functions">Spawner Functions</h2>
+<h3 id="emplacement-spawners">Emplacement Spawners</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./ForceEmplacementSpawnerSpawn.md">ForceEmplacementSpawnerSpawn</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetEmplacementSpawnerAbandonVehicleOutOfCombatArea.md">SetEmplacementSpawnerAbandonVehicleOutOfCombatArea</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetEmplacementSpawnerApplyDamageToAbandonVehicle.md">SetEmplacementSpawnerApplyDamageToAbandonVehicle</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetEmplacementSpawnerAutoSpawn.md">SetEmplacementSpawnerAutoSpawn</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetEmplacementSpawnerKeepAliveAbandonRadius.md">SetEmplacementSpawnerKeepAliveAbandonRadius</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetEmplacementSpawnerRespawnTime.md">SetEmplacementSpawnerRespawnTime</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetEmplacementSpawnerSpawnerRadius.md">SetEmplacementSpawnerSpawnerRadius</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetEmplacementSpawnerTimeUntilAbandon.md">SetEmplacementSpawnerTimeUntilAbandon</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetEmplacementSpawnerType.md">SetEmplacementSpawnerType</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetEmplacementSpawner.md">GetEmplacementSpawner</a></li>
+</ul>
+<h3 id="vehicle-spawners">Vehicle Spawners</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./ForceVehicleSpawnerSpawn.md">ForceVehicleSpawnerSpawn</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetVehicleSpawnerAbandonVehiclesOutOfCombatArea.md">SetVehicleSpawnerAbandonVehiclesOutOfCombatArea</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetVehicleSpawnerApplyDamageToAbandonVehicle.md">SetVehicleSpawnerApplyDamageToAbandonVehicle</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetVehicleSpawnerAutoSpawn.md">SetVehicleSpawnerAutoSpawn</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetVehicleSpawnerKeepAliveAbandonRadius.md">SetVehicleSpawnerKeepAliveAbandonRadius</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetVehicleSpawnerKeepAliveSpawnerRadius.md">SetVehicleSpawnerKeepAliveSpawnerRadius</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetVehicleSpawnerRespawnTime.md">SetVehicleSpawnerRespawnTime</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetVehicleSpawnerTimeUntilAbandon.md">SetVehicleSpawnerTimeUntilAbandon</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetVehicleSpawnerVehicleType.md">SetVehicleSpawnerVehicleType</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetVehicleSpawner.md">GetVehicleSpawner</a></li>
+</ul>
+<h3 id="general-spawners">General Spawners</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetSpawner.md">GetSpawner</a></li>
+</ul>
+<h2 id="player-functions">Player Functions</h2>
+<h3 id="player-deployment">Player Deployment</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./DeployAllPlayers.md">DeployAllPlayers</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./DeployPlayer.md">DeployPlayer</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./EnableAllPlayerDeploy.md">EnableAllPlayerDeploy</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./EnablePlayerDeploy.md">EnablePlayerDeploy</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetRedeployTime.md">SetRedeployTime</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./UndeployAllPlayers.md">UndeployAllPlayers</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./UndeployPlayer.md">UndeployPlayer</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./DisablePlayerJoin.md">DisablePlayerJoin</a></li>
+</ul>
+<h3 id="player-spawning">Player Spawning</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetSpawnMode.md">SetSpawnMode</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SpawnPlayerFromSpawnPoint.md">SpawnPlayerFromSpawnPoint</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetSpawnPoint.md">GetSpawnPoint</a></li>
+</ul>
+<h3 id="player-health-damage">Player Health &amp; Damage</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./DealDamage.md">DealDamage</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./ForceRevive.md">ForceRevive</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./Heal.md">Heal</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./Kill.md">Kill</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./ForceManDown.md">ForceManDown</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SkipManDown.md">SkipManDown</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetPlayerMaxHealth.md">SetPlayerMaxHealth</a></li>
+</ul>
+<h3 id="player-movement">Player Movement</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="Teleport/">Teleport</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetPlayerMovementSpeedMultiplier.md">SetPlayerMovementSpeedMultiplier</a></li>
+</ul>
+<h3 id="player-input">Player Input</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./EnableAllInputRestrictions.md">EnableAllInputRestrictions</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./EnableInputRestriction.md">EnableInputRestriction</a></li>
+</ul>
+<h3 id="player-inventory-equipment">Player Inventory &amp; Equipment</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./AddAttachmentToWeaponPackage.md">AddAttachmentToWeaponPackage</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./AddEquipment.md">AddEquipment</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./ForceSwitchInventory.md">ForceSwitchInventory</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./RemoveEquipment.md">RemoveEquipment</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetInventoryAmmo.md">SetInventoryAmmo</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetInventoryMagazineAmmo.md">SetInventoryMagazineAmmo</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./Resupply.md">Resupply</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./CreateNewWeaponPackage.md">CreateNewWeaponPackage</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetInventoryAmmo.md">GetInventoryAmmo</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetInventoryMagazineAmmo.md">GetInventoryMagazineAmmo</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./HasEquipment.md">HasEquipment</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./IsInventorySlotActive.md">IsInventorySlotActive</a></li>
+</ul>
+<h3 id="player-queries">Player Queries</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./AllPlayers.md">AllPlayers</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./ClosestPlayerTo.md">ClosestPlayerTo</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./FarthestPlayerFrom.md">FarthestPlayerFrom</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetPlayerDeaths.md">GetPlayerDeaths</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetPlayerKills.md">GetPlayerKills</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetSoldierState.md">GetSoldierState</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./IsPlayerValid.md">IsPlayerValid</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./EventDamageTypeCompare.md">EventDamageTypeCompare</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./EventDeathTypeCompare.md">EventDeathTypeCompare</a></li>
+</ul>
+<h3 id="player-team-squad">Player Team &amp; Squad</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="SetTeam/">SetTeam</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetSquad.md">GetSquad</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="GetTeam/">GetTeam</a></li>
+</ul>
+<h3 id="player-spotting">Player Spotting</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SpotTarget.md">SpotTarget</a></li>
+</ul>
+<h2 id="game-mode-functions">Game Mode Functions</h2>
+<h3 id="game-mode-control">Game Mode Control</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="EndGameMode/">EndGameMode</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./PauseGameModeTime.md">PauseGameModeTime</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./ResetGameModeTime.md">ResetGameModeTime</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetFriendlyFire.md">SetFriendlyFire</a></li>
+</ul>
+<h3 id="game-mode-scoring">Game Mode Scoring</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetGameModeScore.md">SetGameModeScore</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetGameModeTargetScore.md">SetGameModeTargetScore</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetGameModeTimeLimit.md">SetGameModeTimeLimit</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetGameModeScore.md">GetGameModeScore</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetMatchTimeElapsed.md">GetMatchTimeElapsed</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetMatchTimeRemaining.md">GetMatchTimeRemaining</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetRoundTime.md">GetRoundTime</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetTargetScore.md">GetTargetScore</a></li>
+</ul>
+<h3 id="faction-map">Faction &amp; Map</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./IsFaction.md">IsFaction</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./IsCurrentMap.md">IsCurrentMap</a></li>
+</ul>
+<h2 id="objective-functions">Objective Functions</h2>
+<h3 id="capture-points">Capture Points</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./EnableCapturePointDeploying.md">EnableCapturePointDeploying</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetCapturePointCapturingTime.md">SetCapturePointCapturingTime</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetCapturePointNeutralizationTime.md">SetCapturePointNeutralizationTime</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetCapturePointOwner.md">SetCapturePointOwner</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetMaxCaptureMultiplier.md">SetMaxCaptureMultiplier</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./AllCapturePoints.md">AllCapturePoints</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetCapturePoint.md">GetCapturePoint</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetCaptureProgress.md">GetCaptureProgress</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetCurrentOwnerTeam.md">GetCurrentOwnerTeam</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetOwnerProgressTeam.md">GetOwnerProgressTeam</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetPlayersOnPoint.md">GetPlayersOnPoint</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetPreviousOwnerTeam.md">GetPreviousOwnerTeam</a></li>
+</ul>
+<h3 id="hq-headquarters">HQ (Headquarters)</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./EnableHQ.md">EnableHQ</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetHQTeam.md">SetHQTeam</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetHQ.md">GetHQ</a></li>
+</ul>
+<h3 id="mcom">MCOM</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetMCOMFuseTime.md">SetMCOMFuseTime</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetMCOM.md">GetMCOM</a></li>
+</ul>
+<h3 id="sector">Sector</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetSector.md">GetSector</a></li>
+</ul>
+<h3 id="general-objectives">General Objectives</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./EnableGameModeObjective.md">EnableGameModeObjective</a></li>
+</ul>
+<h2 id="world-objects">World Objects</h2>
+<h3 id="area-triggers">Area Triggers</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="EnableAreaTrigger/">EnableAreaTrigger</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="GetAreaTrigger/">GetAreaTrigger</a></li>
+</ul>
+<h3 id="interact-points">Interact Points</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./EnableInteractPoint.md">EnableInteractPoint</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetInteractPoint.md">GetInteractPoint</a></li>
+</ul>
+<h3 id="spatial-objects">Spatial Objects</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./EnableSpatialObject.md">EnableSpatialObject</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetSpatialObject.md">GetSpatialObject</a></li>
+</ul>
+<h3 id="object-manipulation">Object Manipulation</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./MoveObject.md">MoveObject</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./MoveObjectOverTime.md">MoveObjectOverTime</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./OrbitObjectOverTime.md">OrbitObjectOverTime</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./RotateObject.md">RotateObject</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetObjectTransform.md">SetObjectTransform</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetObjectTransformOverTime.md">SetObjectTransformOverTime</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./StopActiveMovementForObject.md">StopActiveMovementForObject</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./UnspawnObject.md">UnspawnObject</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="SpawnObject/">SpawnObject</a></li>
+</ul>
+<h3 id="object-queries">Object Queries</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="GetObjId/">GetObjId</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetObjectPosition.md">GetObjectPosition</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetObjectRotation.md">GetObjectRotation</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetObjectTransform.md">GetObjectTransform</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./AllObjectsOfType.md">AllObjectsOfType</a></li>
+</ul>
+<h3 id="raycasting">Raycasting</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./RayCast.md">RayCast</a></li>
+</ul>
+<h2 id="ui-functions">UI Functions</h2>
+<h3 id="world-icons">World Icons</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./AddUIIcon.md">AddUIIcon</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="EnableWorldIconImage/">EnableWorldIconImage</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./EnableWorldIconText.md">EnableWorldIconText</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./RemoveUIIcon.md">RemoveUIIcon</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetWorldIconColor.md">SetWorldIconColor</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetWorldIconImage.md">SetWorldIconImage</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetWorldIconOwner.md">SetWorldIconOwner</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetWorldIconPosition.md">SetWorldIconPosition</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetWorldIconText.md">SetWorldIconText</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetWorldIcon.md">GetWorldIcon</a></li>
+</ul>
+<h3 id="notifications-messages">Notifications &amp; Messages</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./ClearAllCustomNotificationMessages.md">ClearAllCustomNotificationMessages</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./ClearCustomNotificationMessage.md">ClearCustomNotificationMessage</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./DisplayCustomNotificationMessage.md">DisplayCustomNotificationMessage</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./DisplayHighlightedWorldLogMessage.md">DisplayHighlightedWorldLogMessage</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./DisplayNotificationMessage.md">DisplayNotificationMessage</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SendErrorReport.md">SendErrorReport</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./Message.md">Message</a></li>
+</ul>
+<h3 id="scoreboard">Scoreboard</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetScoreboardColumnNames.md">SetScoreboardColumnNames</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetScoreboardColumnWidths.md">SetScoreboardColumnWidths</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetScoreboardHeader.md">SetScoreboardHeader</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetScoreboardPlayerValues.md">SetScoreboardPlayerValues</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetScoreboardSorting.md">SetScoreboardSorting</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetScoreboardType.md">SetScoreboardType</a></li>
+</ul>
+<h3 id="ui-widgets-creation">UI Widgets - Creation</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./AddUIButton.md">AddUIButton</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./AddUIContainer.md">AddUIContainer</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./AddUIGadgetImage.md">AddUIGadgetImage</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./AddUIImage.md">AddUIImage</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./AddUIText.md">AddUIText</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./AddUIWeaponImage.md">AddUIWeaponImage</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./DeleteAllUIWidgets.md">DeleteAllUIWidgets</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./DeleteUIWidget.md">DeleteUIWidget</a></li>
+</ul>
+<h3 id="ui-widgets-button-properties">UI Widgets - Button Properties</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./EnableUIButtonEvent.md">EnableUIButtonEvent</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetUIButtonAlphaBase.md">SetUIButtonAlphaBase</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetUIButtonAlphaDisabled.md">SetUIButtonAlphaDisabled</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetUIButtonAlphaFocused.md">SetUIButtonAlphaFocused</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetUIButtonAlphaHover.md">SetUIButtonAlphaHover</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetUIButtonAlphaPressed.md">SetUIButtonAlphaPressed</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetUIButtonColorBase.md">SetUIButtonColorBase</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetUIButtonColorDisabled.md">SetUIButtonColorDisabled</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetUIButtonColorFocused.md">SetUIButtonColorFocused</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetUIButtonColorHover.md">SetUIButtonColorHover</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetUIButtonColorPressed.md">SetUIButtonColorPressed</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetUIButtonEnabled.md">SetUIButtonEnabled</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetUIButtonAlphaBase.md">GetUIButtonAlphaBase</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetUIButtonAlphaDisabled.md">GetUIButtonAlphaDisabled</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetUIButtonAlphaFocused.md">GetUIButtonAlphaFocused</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetUIButtonAlphaHover.md">GetUIButtonAlphaHover</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetUIButtonAlphaPressed.md">GetUIButtonAlphaPressed</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetUIButtonColorBase.md">GetUIButtonColorBase</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetUIButtonColorDisabled.md">GetUIButtonColorDisabled</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetUIButtonColorFocused.md">GetUIButtonColorFocused</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetUIButtonColorHover.md">GetUIButtonColorHover</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetUIButtonColorPressed.md">GetUIButtonColorPressed</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetUIButtonEnabled.md">GetUIButtonEnabled</a></li>
+</ul>
+<h3 id="ui-widgets-image-properties">UI Widgets - Image Properties</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetUIImageAlpha.md">SetUIImageAlpha</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetUIImageColor.md">SetUIImageColor</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetUIImageType.md">SetUIImageType</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetUIImageAlpha.md">GetUIImageAlpha</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetUIImageColor.md">GetUIImageColor</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetUIImageType.md">GetUIImageType</a></li>
+</ul>
+<h3 id="ui-widgets-text-properties">UI Widgets - Text Properties</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetUITextAlpha.md">SetUITextAlpha</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetUITextAnchor.md">SetUITextAnchor</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetUITextColor.md">SetUITextColor</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetUITextLabel.md">SetUITextLabel</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetUITextSize.md">SetUITextSize</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetUITextAlpha.md">GetUITextAlpha</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetUITextAnchor.md">GetUITextAnchor</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetUITextColor.md">GetUITextColor</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetUITextSize.md">GetUITextSize</a></li>
+</ul>
+<h3 id="ui-widgets-general-properties">UI Widgets - General Properties</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetUIWidgetAnchor.md">SetUIWidgetAnchor</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetUIWidgetBgAlpha.md">SetUIWidgetBgAlpha</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetUIWidgetBgColor.md">SetUIWidgetBgColor</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetUIWidgetBgFill.md">SetUIWidgetBgFill</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetUIWidgetDepth.md">SetUIWidgetDepth</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetUIWidgetName.md">SetUIWidgetName</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetUIWidgetPadding.md">SetUIWidgetPadding</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetUIWidgetParent.md">SetUIWidgetParent</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetUIWidgetPosition.md">SetUIWidgetPosition</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetUIWidgetSize.md">SetUIWidgetSize</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="SetUIWidgetVisible/">SetUIWidgetVisible</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetUIWidgetAnchor.md">GetUIWidgetAnchor</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetUIWidgetBgAlpha.md">GetUIWidgetBgAlpha</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetUIWidgetBgColor.md">GetUIWidgetBgColor</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetUIWidgetBgFill.md">GetUIWidgetBgFill</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetUIWidgetDepth.md">GetUIWidgetDepth</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetUIWidgetName.md">GetUIWidgetName</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetUIWidgetPadding.md">GetUIWidgetPadding</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetUIWidgetParent.md">GetUIWidgetParent</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetUIWidgetPosition.md">GetUIWidgetPosition</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetUIWidgetSize.md">GetUIWidgetSize</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetUIWidgetVisible.md">GetUIWidgetVisible</a></li>
+</ul>
+<h3 id="ui-widgets-queries">UI Widgets - Queries</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./FindUIWidgetWithName.md">FindUIWidgetWithName</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetUIRoot.md">GetUIRoot</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./HasUIWidgetWithName.md">HasUIWidgetWithName</a></li>
+</ul>
+<h3 id="ui-input">UI Input</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./EnableUIInputMode.md">EnableUIInputMode</a></li>
+</ul>
+<h2 id="vehicle-functions">Vehicle Functions</h2>
+<h3 id="vehicle-control">Vehicle Control</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./ForcePlayerExitVehicle.md">ForcePlayerExitVehicle</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./ForcePlayerToSeat.md">ForcePlayerToSeat</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SetVehicleMaxHealthMultiplier.md">SetVehicleMaxHealthMultiplier</a></li>
+</ul>
+<h3 id="vehicle-queries">Vehicle Queries</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./AllVehicles.md">AllVehicles</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./CompareVehicleName.md">CompareVehicleName</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetAllPlayersInVehicle.md">GetAllPlayersInVehicle</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetPlayerFromVehicleSeat.md">GetPlayerFromVehicleSeat</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetPlayerVehicleSeat.md">GetPlayerVehicleSeat</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetVehicleFromPlayer.md">GetVehicleFromPlayer</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetVehicleSeatCount.md">GetVehicleSeatCount</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetVehicleState.md">GetVehicleState</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetVehicleTeam.md">GetVehicleTeam</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./IsVehicleOccupied.md">IsVehicleOccupied</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./IsVehicleSeatOccupied.md">IsVehicleSeatOccupied</a></li>
+</ul>
+<h2 id="waypoints">Waypoints</h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GetWaypointPath.md">GetWaypointPath</a></li>
+</ul>
+<h2 id="array-functions">Array Functions</h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./AppendToArray.md">AppendToArray</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./ArraySlice.md">ArraySlice</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./CountOf.md">CountOf</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./EmptyArray.md">EmptyArray</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./FirstOf.md">FirstOf</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./LastOf.md">LastOf</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./RandomValueInArray.md">RandomValueInArray</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./RandomizedArray.md">RandomizedArray</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SortedArray.md">SortedArray</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./ValueInArray.md">ValueInArray</a></li>
+</ul>
+<h2 id="logic-comparison">Logic &amp; Comparison</h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./And.md">And</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./Equals.md">Equals</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GreaterThan.md">GreaterThan</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./GreaterThanEqualTo.md">GreaterThanEqualTo</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./IfThenElse.md">IfThenElse</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./IsType.md">IsType</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./LessThan.md">LessThan</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./LessThanEqualTo.md">LessThanEqualTo</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./Not.md">Not</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./NotEqualTo.md">NotEqualTo</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./Or.md">Or</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./Xor.md">Xor</a></li>
+</ul>
+<h2 id="string-functions">String Functions</h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./Concat.md">Concat</a></li>
+</ul>
+<h2 id="math-functions">Math Functions</h2>
+<h3 id="basic-math">Basic Math</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./AbsoluteValue.md">AbsoluteValue</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./Add.md">Add</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./Ceiling.md">Ceiling</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./Divide.md">Divide</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./Floor.md">Floor</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./Max.md">Max</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./Modulo.md">Modulo</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./Multiply.md">Multiply</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./RaiseToPower.md">RaiseToPower</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./RoundToInteger.md">RoundToInteger</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SquareRoot.md">SquareRoot</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./Subtract.md">Subtract</a></li>
+</ul>
+<h3 id="trigonometry">Trigonometry</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./ArccosineInDegrees.md">ArccosineInDegrees</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./ArccosineInRadians.md">ArccosineInRadians</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./ArcsineInDegrees.md">ArcsineInDegrees</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./ArcsineInRadians.md">ArcsineInRadians</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./ArctangentInDegrees.md">ArctangentInDegrees</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./ArctangentInRadians.md">ArctangentInRadians</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./CosineFromDegrees.md">CosineFromDegrees</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./CosineFromRadians.md">CosineFromRadians</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SineFromDegrees.md">SineFromDegrees</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./SineFromRadians.md">SineFromRadians</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./TangentFromDegrees.md">TangentFromDegrees</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./TangentFromRadians.md">TangentFromRadians</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./DegreesToRadians.md">DegreesToRadians</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./RadiansToDegrees.md">RadiansToDegrees</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./Pi.md">Pi</a></li>
+</ul>
+<h3 id="random">Random</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./RandomReal.md">RandomReal</a></li>
+</ul>
+<h2 id="vector-transform-functions">Vector &amp; Transform Functions</h2>
+<h3 id="vector-creation">Vector Creation</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./CreateVector.md">CreateVector</a></li>
+</ul>
+<h3 id="vector-math">Vector Math</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./AngleBetweenVectors.md">AngleBetweenVectors</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./AngleDifference.md">AngleDifference</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./CrossProduct.md">CrossProduct</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./DirectionFromAngles.md">DirectionFromAngles</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./DirectionTowards.md">DirectionTowards</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./DistanceBetween.md">DistanceBetween</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./DotProduct.md">DotProduct</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./Normalize.md">Normalize</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./VectorTowards.md">VectorTowards</a></li>
+</ul>
+<h3 id="vector-components">Vector Components</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./XComponentOf.md">XComponentOf</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./YComponentOf.md">YComponentOf</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./ZComponentOf.md">ZComponentOf</a></li>
+</ul>
+<h3 id="direction-vectors">Direction Vectors</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./BackwardVector.md">BackwardVector</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./DownVector.md">DownVector</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./ForwardVector.md">ForwardVector</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./LeftVector.md">LeftVector</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./RightVector.md">RightVector</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./UpVector.md">UpVector</a></li>
+</ul>
+<h3 id="coordinate-transforms">Coordinate Transforms</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./LocalPositionOf.md">LocalPositionOf</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./LocalVectorOf.md">LocalVectorOf</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./WorldPositionOf.md">WorldPositionOf</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./WorldVectorOf.md">WorldVectorOf</a></li>
+</ul>
+<h3 id="transform">Transform</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="./CreateTransform.md">CreateTransform</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.path", "navigation.indexes", "navigation.sections", "navigation.expand"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.1e8ae164.min.js"></script>
+      
+    
+  </body>
+</html>
