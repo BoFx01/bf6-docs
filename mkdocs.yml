@@ -47,3 +47,5 @@ nav:
       - ./api/mod/events/index.md
       - ./api/mod/functions/index.md
       - ./api/mod/types/index.md
+    - modlib:
+      - ./api/modlib/index.md
