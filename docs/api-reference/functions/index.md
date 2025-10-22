@@ -23,7 +23,7 @@
 ## AI Functions
 
 ### AI Behavior
-- [ ] [AIBattlefieldBehavior](./AIBattlefieldBehavior.md)
+- [x] [AIBattlefieldBehavior](./AIBattlefieldBehavior.md)
 - [ ] [AIDefendPositionBehavior](./AIDefendPositionBehavior.md)
 - [ ] [AIIdleBehavior](./AIIdleBehavior.md)
 - [ ] [AILOSMoveToBehavior](./AILOSMoveToBehavior.md)
@@ -35,7 +35,7 @@
 ### AI Spawning
 - [ ] [AISetUnspawnOnDead](./AISetUnspawnOnDead.md)
 - [ ] [SetUnspawnDelayInSeconds](./SetUnspawnDelayInSeconds.md)
-- [ ] [SpawnAIFromAISpawner](./SpawnAIFromAISpawner.md)
+- [x] [SpawnAIFromAISpawner](./SpawnAIFromAISpawner.md)
 - [ ] [UnspawnAllAIsFromAISpawner](./UnspawnAllAIsFromAISpawner.md)
 
 ### AI Combat
