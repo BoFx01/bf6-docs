@@ -48,7 +48,7 @@ export function OnPlayerUndeploy(eventPlayer: mod.Player): void;
     }
     ```
 
-![Screen recording of player deploying and undeploying](../../img/OnPlayerUndeploy_example.gif)
+![Screen recording of player deploying and undeploying](../../../img/OnPlayerUndeploy_example.gif)
 
 ## See Also
 

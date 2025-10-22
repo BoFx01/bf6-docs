@@ -31,7 +31,7 @@ export function OnMandown(eventPlayer: mod.Player, eventOtherPlayer: mod.Player)
     }
     ```
 
-![Screen capture of player being downed](../../img/OnMandown_example.gif)
+![Screen capture of player being downed](../../../img/OnMandown_example.gif)
 
 ## See Also
 

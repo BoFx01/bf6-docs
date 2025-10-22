@@ -5,6 +5,7 @@ theme:
     - navigation.path
     - navigation.indexes
     - navigation.sections
+    - navigation.expand
 repo_url: https://github.com/BoFx01/bf6-docs/
 edit_uri: edit/main/docs/
 site_url: https://bofx01.github.io/bf6-docs/
@@ -16,3 +17,12 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tabbed:
       alternate_style: true
+nav:
+  - index.md
+  - API Reference:
+    - ./api/index.md
+    - mod:
+      - ./api/mod/index.md
+      - ./api/mod/events/index.md
+      - ./api/mod/functions/index.md
+      - ./api/mod/types/index.md

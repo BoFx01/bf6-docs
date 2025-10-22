@@ -1,4 +1,4 @@
-# Event Handlers
+# Events
 
 !!! warning "Work in Progress"
 

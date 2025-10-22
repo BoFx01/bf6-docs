@@ -39,7 +39,7 @@ export function OnPlayerEnterCapturePoint(eventPlayer: mod.Player, eventCaptureP
     }
     ```
 
-![Screen recording of player entering and exiting a capture point](../../img/OnPlayerCapture_example.gif)
+![Screen recording of player entering and exiting a capture point](../../../img/OnPlayerCapture_example.gif)
 
 ## See Also
 

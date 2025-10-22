@@ -36,7 +36,7 @@ export function OnPlayerJoinGame(eventPlayer: mod.Player): void;
     }
     ```
 
-![Image of the welcome message](../../img/OnPlayerJoinGame_example.png)
+![Image of the welcome message](../../../img/OnPlayerJoinGame_example.png)
 
 ## See Also
 

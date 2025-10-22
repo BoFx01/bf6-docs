@@ -41,4 +41,4 @@ export async function OnGameModeEnding() {
 
 ## See Also
 
-- [`OnGameModeEnding`](../event-handlers/OnGameModeEnding.md)
+- [`OnGameModeEnding`](../events/OnGameModeEnding.md)

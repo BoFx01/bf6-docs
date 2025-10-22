@@ -43,4 +43,4 @@ export async function OnPlayerDeployed(eventPlayer: mod.Player) {
 - [`DeployPlayer`](../functions/DeployPlayer.md)
 - [`SpawnPlayerFromSpawnPoint`](../functions/SpawnPlayerFromSpawnPoint.md)
 - [`WorldPositionOf`](../functions/WorldPositionOf.md)
-- [`OnPlayerDeployed`](../event-handlers/OnPlayerDeployed.md)
+- [`OnPlayerDeployed`](../events/OnPlayerDeployed.md)

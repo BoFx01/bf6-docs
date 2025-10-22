@@ -1,6 +1,6 @@
 # EnableAreaTrigger
 
-Enables or disables an [`AreaTrigger`](../types/AreaTrigger.md). Area triggers must be enabled before events such as [`OnPlayerEnterAreaTrigger`](../event-handlers/OnPlayerEnterAreaTrigger.md) are fired.
+Enables or disables an [`AreaTrigger`](../types/AreaTrigger.md). Area triggers must be enabled before events such as [`OnPlayerEnterAreaTrigger`](../events/OnPlayerEnterAreaTrigger.md) are fired.
 
 ## Syntax
 

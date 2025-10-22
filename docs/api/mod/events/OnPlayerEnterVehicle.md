@@ -34,7 +34,7 @@ export function OnPlayerEnterVehicle(eventPlayer: mod.Player, eventVehicle: mod.
     }
     ```
 
-![Screen recording of player entering vehicle](../../img/OnPlayerEnterVehicle_example.gif)
+![Screen recording of player entering vehicle](../../../img/OnPlayerEnterVehicle_example.gif)
 
 ## See Also
 

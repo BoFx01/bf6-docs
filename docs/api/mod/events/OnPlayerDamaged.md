@@ -44,7 +44,7 @@ export function OnPlayerDamaged(
     }
     ```
 
-![Screen capture of player taking damage](../../img/OnPlayerDamaged_example.gif)
+![Screen capture of player taking damage](../../../img/OnPlayerDamaged_example.gif)
 
 ## See Also
 

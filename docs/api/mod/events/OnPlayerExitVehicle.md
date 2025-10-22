@@ -34,7 +34,7 @@ export function OnPlayerExitVehicle(eventPlayer: mod.Player, eventVehicle: mod.V
     }
     ```
 
-![Screen recording of player exiting vehicle](../../img/OnPlayerExitVehicle_example.gif)
+![Screen recording of player exiting vehicle](../../../img/OnPlayerExitVehicle_example.gif)
 
 ## See Also
 

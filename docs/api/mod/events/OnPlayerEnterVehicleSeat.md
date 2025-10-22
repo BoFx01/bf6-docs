@@ -48,7 +48,7 @@ export function OnPlayerEnterVehicleSeat(
     }
     ```
 
-![Screen recording of player changing seats](../../img/OnPlayerEnterVehicleSeat_example.gif)
+![Screen recording of player changing seats](../../../img/OnPlayerEnterVehicleSeat_example.gif)
 
 ## See Also
 

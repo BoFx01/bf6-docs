@@ -44,7 +44,7 @@ export function OnPlayerDied(
     }
     ```
 
-![Screen capture of player dying](../../img/OnPlayerDied_example.gif)
+![Screen capture of player dying](../../../img/OnPlayerDied_example.gif)
 
 ## See Also
 
