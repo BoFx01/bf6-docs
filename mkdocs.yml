@@ -7,6 +7,7 @@ theme:
     - navigation.sections
 repo_url: https://github.com/BoFx01/bf6-docs/
 edit_uri: edit/main/docs/
+site_url: https://bofx01.github.io/bf6-docs/
 markdown_extensions:
   - admonition
   - pymdownx.details
