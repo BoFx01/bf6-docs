@@ -6,6 +6,27 @@ theme:
     - navigation.indexes
     - navigation.sections
     - navigation.expand
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      primary: orange
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
 repo_url: https://github.com/BoFx01/bf6-docs/
 edit_uri: edit/main/docs/
 site_url: https://bofx01.github.io/bf6-docs/
